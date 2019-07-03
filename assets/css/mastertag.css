@@ -1,0 +1,219 @@
+@charset "utf-8";
+/* Mobile Layout: 480px and below. */
+#nav-content li:hover{
+	opacity: 0.5;
+}
+h1{
+	font-size: 4em;
+	margin: 0;
+	padding: 0;
+	font-family: Tahoma, Times, serif;
+	color: #fff;
+}
+#home-footer h1{
+	font-size: 0.5em;
+	font-weight: 300;
+	margin: 0;
+	padding: 0;
+	color: #ffffff;
+}
+#project h1{
+	font-size: 5em;
+	margin: 2% 0 0 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #666;
+	text-align: right;
+}
+#project h2{
+	font-size: 2em;
+	margin: 3% 0 0 0;
+	padding: 0;
+	font-family: Tahoma, Times, serif;
+	color: #666;
+	text-align: right;
+}
+#project h3{
+	font-size: 2.7em;
+	margin: 3% 0 0 0;
+	padding: 0;
+	font-family: Tahoma, Times, serif;
+	color: #333;
+	text-align: right;
+}
+#project h4{
+	font-size: 1.5em;
+	margin: 0;
+	padding: 0;
+	font-family: Tahoma, Times, serif;
+	color: #333;
+	text-align: right;
+}
+#home-proj h2{
+	font-size: 2em;
+	margin: 3% 0 0 0;
+	padding: 0;
+	font-family: Tahoma, Times, serif;
+	color: #333;
+	text-align: right;
+}
+#home-proj h3{
+	font-size: 1.5em;
+	margin: 3% 0 0 0;
+	padding: 0;
+	font-family: Tahoma, Times, serif;
+	color: #333;
+	text-align: right;
+}
+#home-proj h4{
+	font-size: 1em;
+	margin: 0;
+	padding: 0;
+	font-family: Tahoma, Times, serif;
+	color: #333;
+	text-align: right;
+}
+#home-proj h5{
+	font-size: 1.5em;
+	margin-top: 20%;
+	padding: 0 10%;
+	font-family: Tahoma, Times, serif;
+	color: #fff;
+	display; block;
+	line-height: 1.5em;
+	background-color: #03ADC4;
+	text-align: right;
+}
+.home-proj-title-button h4{
+	font-size: 1.1em;
+	line-height: 2em;
+	display: block;
+}
+.home-proj-title-button h4 a{
+	color: #333;
+}
+.home-proj-title-button h4 a:hover{
+	opacity: 0.5;
+	color: #fff;
+}
+#arh h2{
+	font-size: 2.5em;
+	margin: 0;
+	padding: 0;
+	font-family: Tahoma, Times, serif;
+	color: #6C6C6C;
+	text-align: right;
+}
+#arh h3{
+	font-size: 1.5em;
+	margin: 0;
+	padding: 0;
+	font-family: Tahoma, Times, serif;
+	color: #6C6C6C;
+	text-align: right;
+}
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+@media only screen and (min-width: 481px) {
+#arh h2{
+	font-size: 3em;
+}
+#arh h3{
+	font-size: 2em;
+}
+#project h1{
+	font-size: 6em;
+	margin: 2% 0 0 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #666;
+	text-align: right;
+}
+#project h2{
+	font-size: 3em;
+	margin: 3% 0 0 0;
+	padding: 0;
+	font-family: Tahoma, Times, serif;
+	color: #666;
+	text-align: right;
+}
+#project h3{
+	font-size: 3.7em;
+	margin: 3% 0 0 0;
+}
+#project h4{
+	font-size: 2.5em;
+}
+#home-proj h2{
+	font-size: 3em;
+	margin: 3% 0 0 0;
+}	
+#home-proj h3{
+	font-size: 2.5em;
+	margin: 3% 0 0 0;
+}
+#home-proj h4{
+	font-size: 1.5em;
+}
+#home-proj h5{
+	font-size: 2.5em;
+	margin-top: 20%;
+	padding: 0 10%;
+	line-height:2em;
+}
+	
+}
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+@media only screen and (min-width: 769px) {	
+h1{
+	font-size: 5em;
+}
+#arh h2{
+	font-size: 2.5em;
+}
+#arh h3{
+	font-size: 1.5em;
+}
+#project h1{
+	font-size: 5em;
+	margin: 2% 0 0 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #666;
+	text-align: right;
+}
+#project h2{
+	font-size: 2em;
+	margin: 3% 0 0 0;
+	padding: 0;
+	font-family: Tahoma, Times, serif;
+	color: #666;
+	text-align: right;
+}
+#project h3{
+	font-size: 2.7em;
+	margin: 3% 0 0 0;
+}
+#project h4{
+	font-size: 1.5em;
+}
+#home-proj h2{
+	font-size: 2.2em;
+	margin: 3% 0 0 0;
+}
+#home-proj h3{
+	font-size: 1.5em;
+	margin: 3% 0 0 0;
+}
+#home-proj h4{
+	font-size: 1.3em;
+}
+#home-proj h5{
+	font-size: 1.5em;
+	margin-top: 20%;
+	padding: 0 10%;
+	line-height:2em;
+}
+#home-footer h1{
+	font-size: 0.7em;
+}
+}

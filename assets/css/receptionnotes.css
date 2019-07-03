@@ -1,0 +1,473 @@
+@charset "utf-8";
+
+
+
+/* Mobile Layout: 480px and below. */
+
+#reception-notes-container {
+	display: block;
+	position: relative;
+	overflow-y: scrool;
+	overflow-x: hidden;
+	margin-top: 10px;
+	height: 200px;
+}
+
+#signature-notes-container {
+	display: block;
+	position: relative;
+	overflow-y: scrool;
+	overflow-x: hidden;
+	margin-top: 10px;
+	height: 350px;
+}
+
+#reception-notes {
+	display: block;
+	position: relative;
+	padding-bottom: 20px;
+}
+
+.rec-number {
+    float: right;
+    width: 17%;
+    background: #333333;
+    color: #eae8e8;
+    font-size: 24px;
+    font-weight: 700;
+    margin-right: 2%;
+	margin-bottom: 10px;
+}
+
+#navMenu ul li .rec-number a {
+    font-size: 1.2em;
+}
+
+#navMenu ul li .rec-number a {
+    line-height: 42px;
+    font-weight: 700;
+    font-family: arial;
+    height: auto;
+}
+
+.rec-title {
+	display: none;
+}
+
+.rec-space {
+	display: block;
+	margin-bottom: 20px;
+}
+
+.mytext {
+    width: 70%;
+    word-wrap: break-word;
+    border: thin black solid;
+    min-height: 20px;
+    color: #333333;
+    text-align: right;
+    line-height: 20px;
+    padding: 10px 3%;
+    margin-left: 3%;
+}
+
+.signature-title {
+	display: block;
+	color: #333333;
+	font-size: 30px;
+        font-weight: 700;  
+	margin-bottom: 10px;
+}
+
+.signature-date-text {
+    float: none;
+    width: 80%;
+    color: #333333;
+    margin-right: 0;
+    font-size: 14px;
+    font-weight: 300;	
+    text-align: right;
+    line-height: 20px;
+}
+
+.mydate {
+    width: 71%;
+    word-wrap: break-word;
+    border: thin black solid;
+    min-height: 20px;
+    color: #333333;
+    text-align: center;
+    line-height: 20px;
+    padding: 7px 3%;
+    margin-left: 3%;
+}
+
+.signature-sign {
+    display: block;
+    width: 80%;
+    margin-left: 3%;	
+}
+
+.signature-sign-text {
+    width: 96%;
+    color: #333333;
+    text-align: right;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.daiar-sign {
+    display: block;
+    margin-top: 20px;	
+}
+
+.mysignature {
+    width: 94%;
+    word-wrap: break-word;
+    border: thin black solid;
+    min-height: 20px;
+    color: #333333;
+    text-align: right;
+    line-height: 20px;
+    padding: 8px 2% 4px 0;
+}
+
+.signature-box {
+    width: 90%;
+    word-wrap: break-word;
+    border: thin black solid;
+    min-height: 20px;
+    color: #333333;
+    text-align: left;
+    line-height: 20px;
+    padding: 8px 2% 4px 4%;
+    height: 300px;
+}
+
+.signature-but {
+    text-align: right;
+}
+
+#signature-1-box {
+   background-color: #faf8bd;
+   width: 98%;
+   height: 270px
+}
+
+#signature-2-box {
+   background-color: #faf8bd;
+   width: 98%;
+   height: 270px
+}
+
+.center-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+min-height: 26vh;
+}
+
+.notes-link {
+	position: absolute;
+}
+
+.save-but {
+	text-align: center;
+        font-size: 16px;
+        padding-bottom: 5px;
+        margin-top: -30px;
+}
+
+#save-button {
+	text-align: center;
+    font-size: 14px;
+    padding: 5px 10px;
+    margin-top: 10px;
+}
+
+#save-button-sign {
+	text-align: center;
+    font-size: 14px;
+    padding: 5px 20px;
+    margin-top: 50px;
+}
+
+/* PLAN POPUP */
+.plan-popup {
+position: relative;
+z-index: 0;
+}
+
+.plan-popup:hover{
+background-color: transparent;
+z-index: 999999999;
+}
+
+.plan-popup span{ /*CSS for enlarged image*/
+position: absolute;
+background-color: lightyellow;
+padding: 5px;
+left: -100px;
+border: 1px dashed gray;
+visibility: hidden;
+color: black;
+text-decoration: none;
+width:150px;
+}
+
+.plan-popup span img{ /*CSS for enlarged image*/
+border-width: 0;
+padding: 2px;
+}
+
+.plan-popup:hover span{ /*CSS for enlarged image on hover*/
+visibility: visible;
+top: -100px;
+left: -50px; /*position where enlarged image should offset horizontally */
+}
+/* PLAN POPUP END */
+
+
+/* Tablet Layout: 481px to 1068px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 600px) and (max-width: 1068px) {
+
+
+.signature-sign {
+    display: block;
+    width: 80%;
+    margin-left: 3%;	
+}
+
+#signature-notes-container {
+
+	height: 150px;
+}
+
+.signature-box {
+    height: 280px;
+}
+
+#signature-1-box {
+   height: 250px
+}
+
+#signature-2-box {
+   height: 250px
+}
+
+#save-button {
+    font-size: 18px;
+    padding: 5px 20px;
+    margin-top: 20px;
+}
+
+#save-button-sign {
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+}
+
+
+
+/* Desktop Layout: 1069px to a max of 1599px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 1069px) and (max-width: 1599px) {
+
+
+#reception-notes-container {
+	margin-top: 10px;
+	height: 250px;
+}
+
+.rec-number {
+    font-size: 30px;
+}
+
+#navMenu ul li .rec-number a {
+    line-height: 48px;
+}
+
+.rec-title {
+	display: block;
+	color: #333333;
+	font-size: 30px;
+        font-weight: 700;
+	margin-bottom: 10px;
+}
+
+#signature-notes-container {
+	display: block;
+	margin-top: 30px;
+        height: 350px;
+}	
+
+.signature-date-text {
+    float: right;
+    width: 32%;
+    color: #333333;
+    margin-right: 2%;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: left;
+    line-height: 45px;
+}
+
+.mytext {
+    padding: 13px 3%;
+}	
+
+
+.mydate {
+    width: 50%;
+    word-wrap: break-word;
+    border: thin black solid;
+    min-height: 20px;
+    color: #333333;
+    text-align: center;
+    line-height: 20px;
+    padding: 14px 3%;
+    margin-left: 3%;
+}
+
+.signature-sign {
+    display: block;
+    width: 46%;
+    margin-left: 3%;	
+}
+
+.signature-sign-text {
+    width: 100%;
+    color: #333333;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+.daiar-sign {
+    display: block;
+    margin-top: 0;	
+}
+
+.save-but {
+        font-size: 20px;
+        padding-bottom: 20px;
+        margin-top: 0;
+}
+
+#save-button {
+    font-size: 18px;
+    padding: 5px 20px;
+    margin-top: 20px;
+}
+
+#save-button-sign {
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+}
+
+
+/* Desktop Layout: from 1600px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 1600px) {
+
+#reception-notes-container {
+	margin-top: 10px;
+	height: 450px;
+}
+
+.rec-number {
+    font-size: 30px;
+}
+
+#navMenu ul li .rec-number a {
+    line-height: 48px;
+}
+
+.rec-title {
+	display: block;
+	color: #333333;
+	font-size: 30px;
+        font-weight: 700;
+	margin-bottom: 10px;
+}
+
+#signature-notes-container {
+	display: block;
+	margin-top: 30px;
+        height: 450px;
+}	
+
+.signature-date-text {
+    float: right;
+    width: 32%;
+    color: #333333;
+    margin-right: 2%;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: left;
+    line-height: 45px;
+}
+
+.mytext {
+    padding: 13px 3%;
+}
+
+.mydate {
+    width: 50%;
+    word-wrap: break-word;
+    border: thin black solid;
+    min-height: 20px;
+    color: #333333;
+    text-align: center;
+    line-height: 20px;
+    padding: 14px 3%;
+    margin-left: 3%;
+}
+
+.signature-sign {
+    display: block;
+    width: 46%;
+    margin-left: 3%;	
+}
+
+.signature-sign-text {
+    width: 100%;
+    color: #333333;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+.daiar-sign {
+    display: block;
+    margin-top: 0;	
+}
+
+.save-but {
+        font-size: 20px;
+        padding-bottom: 20px;
+        margin-top: 0;
+}
+
+#save-button {
+    font-size: 18px;
+    padding: 5px 20px;
+    margin-top: 20px;
+}
+
+#save-button-sign {
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+
+}

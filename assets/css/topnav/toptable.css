@@ -1,0 +1,42 @@
+/* Mobile Layout: 480px and below. */
+
+
+
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+	
+	
+}
+
+
+/* Desktop Layout: 769px to a max of 1599px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) and (max-width: 1599px) {
+	
+.desk-left-row { height: 40px;}
+.desk-right-row { height: 60px;}
+#left-table label { display: block; margin-bottom: 0; height: 34px; margin-right: 3px; border-radius: 3px; font-size: 12px; line-height: 32px;}	
+#right-table label { display: block; margin-bottom: 0; height: 74px; margin-right: 3px; border-radius: 3px; font-size: 12px; line-height: 72px;}
+.desk-left-text { font-size: 14px;}
+.desk-right-text { font-size: 22px; font-weight: 500;}
+
+	
+	
+}
+
+
+/* Desktop Layout: from 1600px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 1600px) {
+	
+.desk-left-row { height: 40px;}
+.desk-right-row { height: 60px;}
+#left-table label { display: block; margin-bottom: 0; height: 34px; margin-right: 3px; border-radius: 3px; font-size: 12px; line-height: 32px;}	
+#right-table label { display: block; margin-bottom: 0; height: 54px; margin-right: 3px; border-radius: 3px; font-size: 12px; line-height: 52px;}
+.desk-left-text { font-size: 14px;}
+.desk-right-text { font-size: 22px; font-weight: 500;}	
+	
+	
+}									 

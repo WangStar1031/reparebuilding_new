@@ -1,0 +1,439 @@
+@charset "utf-8";
+
+/* Simple fluid media
+
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+
+   http://www.alistapart.com/articles/fluid-images/ 
+
+*/
+
+
+
+
+
+
+
+/* Mobile Layout: 480px and below. */
+
+
+
+.cover{
+
+ 				display: none;                                
+
+                                position: fixed; top: 0; left: 0; width: 100%; margin-top: 210px; 
+
+                                height: 500px; background-color: #0009; z-index: 999999999;
+
+}
+
+
+
+#popupBox1{
+
+				top: 0; left: 0; position: fixed; width: 100%; height: auto;
+
+			    z-index: 1000;  display: none;
+
+}
+
+
+
+#popupBox2{
+
+				top: 0; left: 0; position: fixed; width: 100%; height: auto;
+
+			    z-index: 1000;  display: none;
+
+}
+
+
+
+#popupBox3 {
+
+				top: 0; left: 0; position: fixed; width: 100%; height: auto; z-index: 1000; display: none;
+
+}
+
+
+
+.popupBoxWrapper1{
+
+				width: 96%; margin-top: 0; margin-left: 2%; text-align: left;
+
+                                box-shadow: 0px 3px 5px #333333;
+
+}
+
+.popupBoxContent1{
+
+				background-color: #FFF; padding: 0; text-align: center;
+
+}
+
+
+
+.popupBoxWrapper2{
+
+				width: 96%; margin-top: 0; margin-left: 2%; text-align: left;
+
+                                box-shadow: 0px 3px 5px #333333;
+
+}
+
+.popupBoxContent2{
+
+				background-color: #FFF; padding: 0; text-align: center;
+
+}
+
+
+
+.popupBoxWrapper3 {
+
+				width: 96%; margin-top: 0; margin-left: 2%; text-align: left; box-shadow: 10px 10px 5px grey;
+
+}
+
+.popupBoxContent3 {
+
+				background-color: #FFF; padding: 0;
+
+}
+
+
+
+.sections {
+
+	    display: block; border-bottom: 1px solid #ffffff;
+
+}
+
+
+
+.popup-content-container {
+
+	                  display: block;
+
+}
+
+
+
+.popup-container-numere {
+
+	                 display: block; position: relative; width: 15%; height:200px; overflow: auto;  margin-top: 3px;
+
+}
+
+
+
+.popup-content-plan {
+
+	                  width: 85%;
+
+}
+
+
+
+
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+/* Desktop Layout: 769px to a max of 1599px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+
+
+@media only screen and (min-width: 769px) and (max-width: 1599px) {
+
+
+
+.cover{
+
+ 				display: none;                                
+
+                                position: fixed; top: 0; left: 0; width: 38%; margin-top: 120px; 
+
+                                height: 500px; background-color: #0009; z-index: 999999999;
+
+}
+
+
+
+
+
+#popupBox1{
+
+				top: 0; left: 0; position: fixed; width: 42%; height: auto;
+
+			    z-index: 1000;  display: none;
+
+}	
+
+#popupBox2{
+
+				top: 0; left: 0; position: fixed; width: 46%; height: auto;
+
+			    z-index: 1000;  display: none;
+
+}
+
+
+
+#popupBox3{
+
+				top: 0; left: 0; position: fixed; width: 54%; height: auto;
+
+			    z-index: 1000;  display: none;
+
+}
+
+.popupBoxWrapper1{
+
+				width: 100%; margin: 3% 0 0 5%; float: left; text-align: center;
+
+                                box-shadow: 7px 7px 5px grey;
+
+}
+
+
+
+.popupBoxContent1{
+
+				background-color: #FFF; padding: 15px;
+
+}
+
+
+
+.popupBoxWrapper2{
+
+				width: 100%; float: left; text-align: center;
+
+                                box-shadow: 7px 7px 5px grey;
+
+}
+
+.popupBoxContent2{
+
+				background-color: #FFF; padding: 15px;
+
+}
+
+
+
+.popupBoxWrapper3{
+
+				width: 100%; margin: 4% 0 0 2%; float: left; text-align: center;
+
+                                box-shadow: 7px 7px 5px grey;
+
+}
+
+
+
+.popupBoxContent3{
+
+				background-color: #FFF; padding: 15px;
+
+}
+
+
+
+.popupBoxContent img{
+
+				width: 100%;
+
+}
+
+
+
+.popup-container-numere {
+
+	                 display: block; position: relative; width: 15%; height:250px; overflow: auto; margin-top: 3px;
+
+}
+
+
+
+
+.popup-content-plan {
+
+	                  width: 85%;
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+/* Desktop Layout: from 1600px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+
+
+@media only screen and (min-width: 1600px) {
+
+
+
+
+
+.cover{
+
+ 				display: none;                                
+
+                                position: fixed; top: 0; left: 0; width: 39%; margin-top: 120px; 
+
+                                height: 500px; background-color: #0009; z-index: 999999999;
+
+}
+
+
+
+
+
+#popupBox1{
+
+				top: 0; left: 0; position: fixed; width: 42%; height: auto;
+
+			    z-index: 1000;  display: none;
+
+}	
+
+#popupBox2{
+
+				top: 0; left: 0; position: fixed; width: 42%; height: auto;
+
+			    z-index: 1000;  display: none;
+
+}
+
+
+
+#popupBox3{
+
+				top: 0; left: 0; position: fixed; width: 54%; height: auto;
+
+			    z-index: 1000;  display: none;
+
+}
+
+.popupBoxWrapper1{
+
+				width: 100%; margin: 3% 0 0 5%; float: left; text-align: center;
+
+                                box-shadow: 7px 7px 5px grey;
+
+}
+
+
+
+.popupBoxContent1{
+
+				background-color: #FFF; padding: 15px;
+
+}
+
+
+
+.popupBoxWrapper2{
+
+				width: 100%; float: left; text-align: center;
+
+                                box-shadow: 7px 7px 5px grey;
+
+}
+
+.popupBoxContent2{
+
+				background-color: #FFF; padding: 15px;
+
+}
+
+
+
+.popupBoxWrapper3{
+
+				width: 100%; margin: 2% 0 0 4%; float: left; text-align: center;
+
+                                box-shadow: 7px 7px 5px grey;
+
+}
+
+
+
+.popupBoxContent3{
+
+				background-color: #FFF; padding: 15px;
+
+}
+
+
+
+.popupBoxContent img{
+
+				width: 100%;
+
+}
+
+
+
+.popup-content-container {
+
+	                  display: block;
+
+}
+
+
+
+.popup-container-numere {
+
+	                 display: block; position: relative; width: 15%; height:380px; overflow: auto; margin-top: 3px;
+
+}
+
+
+
+.popup-content-numere {
+
+	                height:1000px;
+
+}
+
+
+
+.popup-content-plan {
+
+	                  width: 85%;
+
+}	
+
+
+
+
+
+}
+

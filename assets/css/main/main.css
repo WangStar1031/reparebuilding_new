@@ -1,0 +1,689 @@
+/* Mobile Layout: 480px and below. */	
+
+	.hideondesktop{
+		display: none; /* INITIAL for Mobile Uploads */
+	}
+	
+	.xBtn{
+		position: absolute;
+		right: 7px;
+		top: 5px;
+		color: white;
+		cursor: pointer;
+		font-size: 14px;
+		background-color: #4e67c9;
+        border-radius: 50px;
+        padding: 1px 8px;
+        color: #ffffff;
+		z-index: 1000;
+	}
+	.xBtn:hover{
+		background-color: red;
+		color: white;
+	}
+	.uploadImgWnd, .uploadedImgWnd{
+		position: fixed;
+		top: 0;
+		left: 1%;
+		width: 42%;
+		margin: auto;
+		font-size: 0.8em;
+	}
+	.imgBorder{
+		max-width: 100%;
+		border: 1px solid #1079e2;
+		padding: 5px;
+		margin-top: 5px;
+		border-radius: 5px;
+		background-color: #ffffff;
+	}
+	.imgBorder-imgcontainer{
+		background-color: #cccccc;
+	}
+	.imgBorder img{
+		opacity: 0.9;
+	}	
+	.contrlBorder {
+		max-width: 100%;
+		border: 2px solid #aaa;
+		padding: 10px 5px;
+		border-radius: 5px;
+		background: #e8e8e8;
+	}				
+	.imgUpload{
+		width: 120px;
+		float: left;
+	}
+	.imgUpload img{
+		border: 1px solid;
+		/*width: 90%;*/
+		width: 120px;
+		margin: auto;
+		height: auto;
+		min-height: 120px;
+		min-width: 120px;
+	}
+	.imgUploadButton{
+		width: 100%;
+		margin: auto;
+		height: auto;
+		text-align: center;
+		background-color: cccccc;
+	}
+	.imgUpload label{
+		font-size: 1.5em;
+		color: black;
+		border: 1px solid;
+		cursor: pointer;
+		padding: 10px;
+	}
+	#imgUploadButton label{
+		font-size: 1.2em;
+		color: #333333;
+		cursor: pointer;
+		border: 1px outset #8e8e8e;
+		padding: 5px 0;
+		line-height: 14px;			
+		border-radius: 3px;
+		background-color: #cccccc;
+	}
+    .desktoppopupBtn {
+		width: 100%;
+		cursor: pointer;
+		text-align: center;	
+		padding: 5px 0;
+		margin-top: 15px;
+		font-size: 1.2em;
+		background: #333333;
+		color:#cccccc;
+    }
+    .desktoppopupBtn:hover {
+    opacity: 0.7;
+	background: #333333;
+	color:#cccccc;
+    }					  
+    #mob-firstleft-column .btn{
+		font-size: 1.8em;
+		line-height: 29px;
+		margin-top: 10px;
+		padding: 10px 35px;
+	}	
+	.imgUploadButton label:hover{
+		opacity: 0.7;
+	}
+	.infFields{
+		width: calc( 100% - 120px);
+		float: left;
+		color: black;
+	}
+	.infFields table, .infFields table input{
+		width: 100%;
+	}
+	.infFields label{
+		width: 100%;
+	}
+	.infFields label input{
+		text-align: left;
+	}
+	.uploadImgWnd input[type='text'], .uploadImgWnd textarea{
+		width: 100%;
+	}
+	.uploadImgWnd select{
+		width: 100%;
+		padding: 0 5px 0 0;
+		line-height: 1em;
+		height: 2em;
+		text-align: right;			  
+	}
+	@media only screen and (max-width: 768px) {
+		.uploadImgWnd, .uploadedImgWnd{
+			width: 96%;
+			z-index: 10000;
+		}
+	}
+	.uploadedImgTitle{
+		width: 100%;
+		background-color: gray;
+	}
+	.uploadedImgPan{
+		/*padding: 10px;*/
+		z-index: 100;
+		border: 2px solid #ffffff;
+        box-shadow: 2px 2px 5px #333333															
+	}
+	.ui-state-highlight{
+		/*background-color: red;*/
+	}
+	.ui-droppable{
+		border: 2px solid #ffffff;
+		/*box-shadow: 1px 1px 5px #064c92, 1px 1px 5px #064c92;*/
+        box-shadow: 5px 5px 10px #666666;
+	}	
+	.ui-droppable-hover{
+		border: 2px solid blue;
+		/*background-color: green;*/
+	}
+	.uploadedImgTitle img{
+		width: 15px;
+		height: 15px;
+		float: right;
+		cursor: pointer;
+	}
+	.groupContainer .photoCount{
+		color: white;
+		position: absolute;
+		right: -8px;
+		bottom: -8px;
+		background-color: green;
+		width: 1.5em;
+		height: 1.5em;
+		line-height: 1.2em;
+		border-radius: 100%;
+		cursor: pointer;
+		border: 2px dotted #ffffff;
+    }
+	.groupContainer .photoCount:hover{
+		background-color: #039a03;
+    }	
+	#dwld {
+	clear: both;
+	margin-left: 10%;
+	width: 80%;
+	display: block;
+	padding: 5px 0;
+	font-family: sans-serif;
+	cursor: default;
+    margin-bottom: 5px;
+	color: #000000;
+	border: 1px solid #1079e2;
+	border-radius: 3px;
+    }
+	#dwld > div {	
+		margin-left: 0;
+		font-size: 24px;
+		width: 20%;
+		margin-top: 0;
+	}
+	#dwld > div a span{
+		color: white;
+	}
+	.textBox{
+		position: absolute;
+		z-index: 1000;
+		right: 5px;
+		bottom: 60px;
+		padding: 5px 7px 5px 7px;
+		background-color: rgba(0,0,0,0.5);
+		display: none;
+		min-width: 70%;
+	}
+	.textBox textarea{
+		margin: 0px;
+		width: 100%;
+	}
+
+	#listPhotoModal .modal-body{
+		overflow-x: auto;
+		height: 700px;
+		margin-bottom: 10px;
+	}
+	#arrNotes .photoBtn{
+		background: #fda400;
+	}
+	#arrReparation .photoBtn{
+		background: #0ac60e;
+	}
+	#arrDefects .photoBtn{
+		background: #fd0000;
+	}	
+	.photoBtn{
+		color: white;
+		margin: 4% 5% 0 0;
+		border-bottom-width: 0;
+	}
+	.photoBtn:hover{
+		background: #a03232;
+		color: white;
+	}	
+    #quick-link .photoBtn{
+		text-align: center;
+	}
+    .defrep-label{
+		display: block;
+		text-align: right;
+		padding: 0 10px;
+	}
+    #btnTypeGroup .btn{
+		border: none;
+		border-radius: 0;
+		width: 48%;
+	}
+    #desk-firstleft-column .btn{
+		border: none;
+		border-radius: 0;
+		width: 100%;
+	}	
+    .infFields-box input[type="text"]{
+		height: 38px;
+	}
+    .defrep-left-column{
+		width: 50%;
+	}
+    .bottom-line{
+		border-top: 1px solid #b8b8b8;
+		display: block;
+	}
+    .mobile-table{
+		width: 51%;
+	}	
+    #mobileHeader table table td{
+		height: 30px;
+		border: 1px solid;
+	}
+    #quicklink-container{
+		display: block;
+		position: relative;
+		overflow-y: auto;
+		overflow-x: hidden;
+        margin-top: 0px;
+        height: 350px;
+		border-bottom: 1px solid #cccccc;
+    }	
+	.ql-tab-header{
+    border-left: 1px solid #cccccc; 
+	border-top: 1px solid #cccccc; 
+	border-right: 1px solid #cccccc; 
+	border-radius: 5px 5px 0 0; 
+	background-color: #cccccc; 
+	line-height: 40px;
+    }
+	.lgout-bt{
+    position: absolute; 
+    }
+    .photocontainer-info{
+    width: 40%;
+    font-size: 12px;
+    vertical-align: top;
+    text-align: right; 
+    }
+    .photocontainer-photo-info{
+    font-size: 14px;
+    vertical-align: middle;
+    text-align: right; 
+    }	
+    .photocontainer-info-titles{
+    background-color: #cccccc;
+    vertical-align: middle;
+	padding-right: 7px;
+    padding-bottom: 2px;
+	border: 2px solid #ffffff;
+    }
+    .photocontainer-info-dates{
+    background-color: #ececec;
+    vertical-align: middle;
+	padding-right: 7px;
+    padding-bottom: 2px;
+	border: 2px solid #ffffff;
+    }
+    .photocontainer-description{
+	width: 98.5%;
+    background-color: #ececec;
+	height: 40px;
+    float: left;
+    }
+	.photocontainer-title{
+	font-family: open sans hebrew;
+	font-size:10px;
+	padding-right: 10px;
+    }
+	.photocontainer-text{
+	display: block;
+	font-weight:700;
+	font-size:14px;
+	margin-top: -5px;
+	padding-right: 10px;
+	width: 150px;
+	line-height: 20px;
+	word-wrap: break-word;
+    }					   
+    .popupBtn {
+    padding: 4% 0;
+    margin-top: 0;
+	margin-bottom: 10px;
+    font-size: 1.6em;
+	width: 100%;
+    }
+    #uploadonmobile label{
+		border: 1px outset #8e8e8e;
+		border-radius: 3px;
+		background-color: #cccccc;
+		padding: 12px 0;
+	}
+    #reception-notes a{
+		padding: 10px;
+		height: 1.5em;
+		line-height: 0.6em;
+		width: 1.5em;
+		font-size: 20px;
+	}	
+	.infFields .col-md-2 {
+		padding-left: 0;
+	}		
+	
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+	
+	.hideondesktop{
+		display: none;
+	}
+	
+}
+
+
+
+/* Desktop Layout: 769px to a max of 1599px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) and (max-width: 1599px) {
+	.hideondesktop{
+		display: none;
+	}
+	.xBtn{
+		right: 15px;
+		top: 17px;
+		font-size: 20px;
+        padding: 0 10px;
+	}	
+	.uploadImgWnd {
+		width: 54%;
+	}	
+    #quick-link .photoBtn{
+		font-size: 20px;
+		text-align: center;
+	}
+	#dwld > div {	
+		font-size: 26px;
+		margin-top: 0;
+	}	
+    .imgUpload{
+		width: 90px;
+	}
+	.imgUpload img{
+		width: 90px;
+		min-height: 120px;
+		min-width: 90px;
+	}
+    .infFields {
+    /* width: calc( 100% - 90px); */
+	width: calc( 100% );
+    }
+    .imgUpload label{
+		font-size: 1.2em;
+		padding: 5px;
+		margin-top: 6px;
+	}
+    .infFields label{
+		font-size: 11px;
+	}
+    .uploadImgWnd select{
+		font-size: 11px;
+		margin-bottom: 5px;
+	}
+    .defrep-label{
+		font-size: 11px;
+		line-height: 20px;
+	}
+    #btnTypeGroup{
+		padding-bottom: 0.3em;
+		padding-left: 0.2em;
+		border-bottom: 1px solid #b8b8b8;
+		border-left: 1px solid #b8b8b8;
+	}	
+    #btnTypeGroup .btn{
+		font-size: 14px;
+		line-height: 20px;
+	}
+    #desk-firstleft-column .btn{
+		font-size: 1.2em;
+		line-height: 29px;
+		margin-top: 10px;
+	}	
+    .infFields-box input[type="text"]{
+		height: 39px;
+		margin-bottom: 0;
+	}
+    .infFields-box textarea{
+		height: 99px;
+		font-size: 10px;
+		margin-bottom: 0;
+		text-align: right;
+	}	
+	.defrep-left-column select{
+		margin-bottom: 14px;
+	}
+	.col-topspace{
+		display: block;
+		margin-top: 5px;
+	}
+    .bottom-line{
+		margin-top: 5px;
+        margin-bottom: 17px;
+	}
+    #comercial-content {
+	float: right;
+	width: 96%;
+	padding: 5% 5% 0 0;
+	display: block;
+	text-align: center;	
+	word-wrap: break-word;	
+    }
+	.ql-tab-header{ 
+	border-radius: 5px 5px 0 0; 
+	background-color: #cccccc; padding: 7px 0;
+    } 
+	.lgout-bt{
+	left: 42%;
+    }  
+ 	.defrepnot-table-title {
+	font-size: 20px;
+    padding: 0 50px;
+    line-height: 28px;
+    margin-bottom: 16px;
+	color: #333333;	
+    } 
+    .popupBtn {
+    padding: 35px 35%;
+    margin-top: 15px;
+    font-size: 1.6em;
+    }	
+    #imgUploadButton label {
+		padding: 12px 0;
+		margin-top: -1px;
+    }							
+    .desktoppopupBtn {
+    padding: 8px 0;
+    margin-top: 19px;
+
+    }	
+	#reception-notes a{
+		padding: 10px;
+		height: 2em;
+		line-height: 1em;
+		width: 2em;
+		font-size: 24px;
+	}
+	.photocontainer-title{
+	font-size:14px;
+	padding-right: 0;
+    }
+	.photocontainer-text{
+	font-size:18px;
+	width: 190px;
+	line-height: 20px;
+	padding-right: 0;
+    }
+	.groupContainer .photoCount{
+		width: 2.2em;
+		height: 2.2em;
+		line-height: 1.9em;
+		right: -14px;
+		bottom: -10px;
+    }	
+	.groupContainer .photoCount p{
+		font-size: 1.3em;
+    }	
+}	
+
+
+
+/* Desktop Layout: from 1600px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 1600px) {
+	.hideondesktop{
+		display: none;
+	}
+	.xBtn{
+		right: 15px;
+		top: 17px;
+		font-size: 20px;
+        padding: 0 10px;
+	}	
+	.uploadImgWnd {
+		width: 54%;
+	}
+    #quick-link .photoBtn{
+		font-size: 20px;
+		text-align: center;
+	}
+	#dwld > div {	
+		font-size: 26px;
+		margin-top: 0;
+	}
+	.imgBorder, .contrlBorder{
+		padding: 10px;
+	}	
+    .imgUpload{
+		width: 90px;
+	}
+	.imgUpload img{
+		width: 90px;
+		min-height: 120px;
+		min-width: 90px;
+	}
+    .infFields {
+    /* width: calc( 100% - 90px); */
+	width: calc( 100% );
+    }
+    .imgUpload label{
+		font-size: 1.2em;
+		padding: 5px;
+		margin-top: 6px;
+	}
+    .infFields label{
+		font-size: 11px;
+	}
+    .uploadImgWnd select{
+		font-size: 11px;
+		margin-bottom: 5px;
+	}
+    .defrep-label{
+		font-size: 11px;
+		line-height: 20px;
+	}
+    #btnTypeGroup{
+		padding-bottom: 0.4em;
+		padding-left: 0.1em;
+		border-bottom: 1px solid #b8b8b8;
+		border-left: 1px solid #b8b8b8;
+	}	
+    #btnTypeGroup .btn{
+		font-size: 14px;
+		line-height: 28px;
+	}
+    #desk-firstleft-column .btn{
+		font-size: 1.2em;
+		line-height: 38px;
+		margin-top: 10px;
+	}	
+    .infFields-box input[type="text"]{
+		height: 39px;
+		margin-bottom: 5px;
+	}
+    .infFields-box textarea{
+		margin-bottom: 0;
+	}	
+	.defrep-left-column select{
+		margin-bottom: 14px;
+	}
+	.col-topspace{
+		display: block;
+		margin-top: 5px;
+	}
+    .bottom-line{
+		padding-top: 16px;
+	}	
+    #comercial-content {
+	float: right;
+	width: 96%;
+	padding: 5% 5% 0 0;
+	display: block;
+	text-align: center;	
+	word-wrap: break-word;	
+    }
+	.ql-tab-header{ 
+	border-radius: 5px 5px 0 0; 
+	background-color: #cccccc; 
+	padding: 7px 0;
+	font-size: 22px;
+    } 
+	.lgout-bt{
+	left: 42%;
+    }
+ 	.defrepnot-table-title {
+	font-size: 23px;
+    padding: 0 50px;
+    line-height: 28px;
+    margin-bottom: 16px;
+	color: #333333;
+    }
+    .popupBtn {
+    padding: 36px 45%;
+    margin-top: 13px;
+    font-size: 1.6em;
+    }
+	#imgUploadButton label{
+		padding: 12px 0;
+		margin-top: -1px;
+	}	
+    .desktoppopupBtn {
+        margin-top: 24px;
+		padding: 8px 0;
+    }						
+    #reception-notes a{
+		padding: 10px;
+		height: 2em;
+		line-height: 1em;
+		width: 2em;
+		font-size: 24px;
+	}	
+	.photocontainer-title{
+	font-size:14px;
+	padding-right: 0;
+    }
+	.photocontainer-text{
+	font-size:18px;
+	width: 190px;
+	line-height: 20px;
+	padding-right: 0;
+    }
+	.groupContainer .photoCount{
+		width: 2.5em;
+		height: 2.5em;
+		line-height: 2.1em;
+		right: -15px;
+		bottom: -12px;
+    }	
+	.groupContainer .photoCount p{
+		font-size: 1.5em;
+    }	
+}						  

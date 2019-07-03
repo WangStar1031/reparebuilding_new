@@ -1,0 +1,66 @@
+/* Content */
+
+
+
+.content-constructor:before {
+
+    content: 'קן התור';
+
+}
+
+
+
+.content-subconstructor:before {
+
+    content: 'הנדסה ובנין בע"מ';
+
+}
+
+
+
+.content-proiect:before {
+
+    content: 'שמעון פרס';
+
+}
+
+
+
+.content-subproiect:before {
+
+    content: 'קריית מלאכי';
+
+}
+
+
+
+.content-subwatchwork:before {
+
+    content: 'צילום ותיעוד מבנים';
+
+}
+
+
+
+.content-data:before {
+
+    content: 'אוקטובר 2018';
+
+}
+
+
+
+.content-what:before {
+
+    content: 'א';
+
+}
+
+
+
+.content-apartament:before {
+
+    content: '7';
+
+}
+

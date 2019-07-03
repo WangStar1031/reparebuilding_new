@@ -1,0 +1,194 @@
+@charset "utf-8";
+/* Mobile Layout: 480px and below. */
+#photoplan {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	margin-top:1%;
+	width: 100%;
+	display: block;
+	cursor: pointer;
+	position: relative;
+	z-index: 999;
+}
+#plan {
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	text-align: center;
+	position: relative;
+	z-index: 999;
+}
+
+#gototop a{
+    color: rgba(255, 255, 255, 0.6);
+}
+#gototop a:hover{
+    text-decoration: none;
+	
+	color: #ffffff;
+}
+#photonumber {
+	margin-left: 2%;
+	
+	margin-top: 8px;
+	color: rgba(255, 255, 255, 0.6);
+	font-size: 12px;
+	width: 10%;
+}
+#zooom  a{
+	color: rgba(255, 255, 255, 0.6);
+}
+#zooom  a:hover{
+    text-decoration: none;
+	
+	color: #ffffff;
+}
+#d-arrow  {
+	margin-left: 2%;
+	font-size: 20px;
+	width: 15%;
+	margin-top: 5px;
+}
+#zooom  {
+	margin-left: 2%;
+	font-size: 20px;
+	width: 15%;
+	margin-top: 7px;
+}
+#notes-link  {
+	font-size: 40px;
+	line-height: 40px;
+	margin-left: 2%;
+	width: 25%;
+	margin-bottom: 5px;
+}
+#gototop {
+	margin-left: 0;
+	font-size: 24px;
+	margin-top: 4px;
+}
+#photonumber {
+	margin-left: 2%;
+	margin-top: 8px;
+	color: rgba(255, 255, 255, 0.6);
+	font-size: 20px;
+	width: 15%;
+}
+#notes-link   a{
+	color: rgba(255, 255, 255, 0.6);
+}
+#notes-link   a:hover{
+    text-decoration: none;
+	color: #ffffff;
+}
+#d-arrow  a{
+	color: rgba(255, 255, 255, 0.6);
+}
+#d-arrow  a:hover {
+    text-decoration: none;
+	color: #ffffff;
+}
+#upload-over-plan {
+    cursor: pointer;
+}
+.upload-over-button  {
+	width: 15%;
+	margin-top: 14px;
+	opacity: 0.6;
+}
+.upload-over-left {
+    display: block;
+    width: 25px;
+    height: 15px;
+    margin-top: -15px;
+    margin-left: -8px;
+	box-shadow: 1px -1px #333333;
+}
+.upload-over-right  {
+	display: block;
+	width: 25px;
+    height: 15px;
+}
+.over-white  {
+	box-sizing: content-box;
+	background-color: #ffffff;
+	border: 3px solid #ffffff;
+}
+.over-black  {
+	box-sizing: content-box;
+	background-color: #333333;
+	border: 3px solid #ffffff;
+}
+.upload-over-button:hover{
+	opacity: 1;
+}
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+@media only screen and (min-width: 481px) {
+	#photoplan {
+		margin-top: 1.3%;	
+	}
+}
+/* Desktop Layout: 769px to a max of 1599px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+@media only screen and (min-width: 769px) and (max-width: 1599px) {
+	#d-arrow  {
+		margin-left: 2%;
+		font-size: 30px;
+		width: 15%;
+		margin-top: 3px;
+	}
+	#zooom  {
+		margin-left: 2%;
+		font-size: 30px;
+		width: 15%;
+		margin-top: 3px;
+	}
+	#notes-link  {
+		font-size: 50px;
+		line-height: 40px;
+		margin-top: 7px;
+	}
+	#gototop {
+        margin-left: 0;
+        font-size: 30px;
+	}
+	#photonumber {
+		margin-left: 2%;
+		margin-top: 8px;
+		color: rgba(255, 255, 255, 0.6);
+		font-size: 24px;
+		width: 15%;
+	}
+}
+/* Desktop Layout: from 1600px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+@media only screen and (min-width: 1600px) {
+	#d-arrow  {
+		font-size: 30px;
+		line-height: 58px;
+	    margin-top: 0;
+	}
+	#zooom  {
+		font-size: 30px;
+		line-height: 64px;
+		margin-left: 2%;
+		width: 10%;
+	    margin-top: 0;
+	}
+	#notes-link  {
+		font-size: 60px;
+		line-height: 60px;
+	}
+	#gototop {
+		font-size: 34px;
+		line-height: 60px;
+	}
+	#photonumber {
+		font-size: 30px;
+	    line-height: 46px;
+	    width: 15%;
+	}
+		
+	#photoplan img {
+		max-width: 100%;
+	}	
+}

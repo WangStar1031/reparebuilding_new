@@ -1,0 +1,4 @@
+[25-Jun-2019 16:59:15 Asia/Jerusalem] PHP Warning:  Invalid argument supplied for foreach() in /home/fixallph/public_html/watchwork.net/WorksProgressDocumentation/Works-Progress/main.php on line 203
+[25-Jun-2019 17:00:53 Asia/Jerusalem] PHP Warning:  Invalid argument supplied for foreach() in /home/fixallph/public_html/watchwork.net/WorksProgressDocumentation/Works-Progress/main.php on line 237
+[25-Jun-2019 17:00:53 Asia/Jerusalem] PHP Warning:  Invalid argument supplied for foreach() in /home/fixallph/public_html/watchwork.net/WorksProgressDocumentation/Works-Progress/main.php on line 267
+[25-Jun-2019 18:09:45 Asia/Jerusalem] PHP Parse error:  syntax error, unexpected '(', expecting variable (T_VARIABLE) or '{' or '$' in /home/fixallph/public_html/watchwork.net/WorksProgressDocumentation/Works-Progress/main.php on line 603

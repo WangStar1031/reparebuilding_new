@@ -1,0 +1,151 @@
+/* Mobile Layout: 480px and below. */
+
+h3{
+  text-align: center;
+}
+button.btn.btn-default {
+  border-width: 1px;
+  color: white;
+  background: transparent;
+  border-color: #d6d6d6;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+.auth-main {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: url("../../assets/images/construction_back.png");
+  background-size: cover;
+  padding: 0 5%;
+}
+.auth-block {
+  width: 540px;
+  margin: 0 auto;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  padding: 42px 32px 32px 32px;
+}
+.auth-block h3{
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+.registration-container{
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: url("../../assets/images/construction_back.png");
+  background-size: cover;
+}
+.registration-content{
+  width: 540px;
+  margin: 0 auto;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+  padding-top: 20px;
+  padding-left: 5%;
+  padding-bottom: 20px;
+  background: rgba(255, 255, 255, 0.45);
+}
+.registration-content h3{
+  text-align: center;
+  padding-right: 30px;
+  font-size: 36px;	
+  padding-right: 50px;
+}
+.registration-email{
+  height: 70px;
+  padding-top: 24px;
+}
+.registration-user{
+  margin-bottom: 0px;
+  padding-top: 4px;
+}
+.registration-password{
+  margin-bottom: 30px;
+  padding-top: 30px;
+}
+.reg-marg{
+  display: block;
+  margin-left: 20px;
+}
+.registration-send{
+  display: block;
+  margin-top: 30px;
+  padding: 5px 78px;
+}
+.confirm-registration{
+  height: 100vh;
+  padding-top: 30vh;  
+  width: 35%;
+  margin-left: 35%;
+}
+.confirm-registration h3{
+  text-align: center;
+  font-size: 26px;	
+}
+.gotologin{
+  text-align: center;
+  padding-top: 30px;
+  font-size: 36px;	
+}
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+	
+	
+}
+
+
+/* Desktop Layout: 769px to a max of 1599px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) and (max-width: 1599px) {
+
+.auth-main {
+  padding: 0;
+}
+.auth-block h3{
+  font-size: 34px;
+}
+.registration-content{
+  width: 35%;
+  margin-left: 35%;
+  padding-left: 70px;
+}	
+}
+
+
+/* Desktop Layout: from 1600px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 1600px) {
+		
+.auth-main {
+  padding: 0;
+}
+.auth-block h3{
+  font-size: 34px;
+}
+.registration-content{
+  width: 30%;
+  margin-left: 35%;  
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 90px;
+}
+.registration-content h3{
+  font-size: 40px;	
+  padding-right: 70px;
+}
+.reg-marg{
+  margin-left: 40px;
+}
+}	
+		

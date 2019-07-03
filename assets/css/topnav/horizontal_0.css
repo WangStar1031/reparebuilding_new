@@ -1,0 +1,383 @@
+@charset "utf-8";
+
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+
+img, object, embed, video {
+
+	max-width: 100%;
+
+}
+
+/* IE 6 does not support max-width so default to width 100% */
+
+.ie6 img {
+	width:100%;
+}
+
+
+
+html.loading #hideonload {
+		opacity: 0;
+		   -moz-transition: opacity 0.3s ease-out;
+		     -o-transition: opacity 0.3s ease-out;
+		-webkit-transition: opacity 0.3s ease-out;
+		    -ms-transition: opacity 0.3s ease-out;
+		transition: opacity 0.3s ease-out
+
+	}
+
+	html.loading:after {
+
+		content: 'Loading...';
+		display: block;
+		line-height: 1em;
+		margin-top: -.5em;
+		position: absolute;
+		text-align: center;
+		top: 50%;
+		width: 100%;
+
+	}
+
+
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+
+	dw-num-cols-mobile:		8;
+	dw-num-cols-tablet:		12;
+	dw-num-cols-desktop:	16;
+	dw-gutter-percentage:	25;
+
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+
+*/
+
+
+
+/* Mobile Layout: 480px and below. */
+
+
+
+body { background: #e8e8e8; }
+
+.container { margin: 0 auto; }
+
+#centered ul { width: 100% !important }
+
+
+/* Example wrapper */
+
+.wrap {
+
+	position: relative;
+
+	margin: 0;
+
+}
+
+
+
+/* Frame */
+
+.frame {
+
+	height: 180px;
+
+	line-height: 30px;
+
+	overflow: hidden;
+
+}
+
+.frame ul {
+
+	list-style: none;
+
+	margin: 0;
+
+	padding: 0;
+
+	height: 100%;
+
+	font-size: 20px;
+
+}
+
+.frame ul li {
+
+	float: left;
+
+	width: 100%;
+
+	height: 100%;
+
+	margin: 0 1px 0 0;
+
+	padding: 0;
+
+	background: #333;
+
+	color: #ddd;
+
+	text-align: center;
+
+	cursor: pointer;
+
+}
+
+.frame ul li.active {
+
+	color: #fff;
+
+	background: #a03232;
+
+}
+
+.frame ul li a{
+
+	display: block;
+
+	height: 180px;
+
+	padding-top: 0px;
+
+	text-decoration: none;
+
+	color: rgba(255, 255, 255, 0.72);
+
+}
+
+.frame ul li a:hover{
+
+	background: rgba(161, 51, 51, 0.54);
+
+}
+
+.doc {
+
+	font-size: 20px;
+
+	line-height: 80px;
+
+}
+
+.doc-number {
+
+	font-size: 80px;
+
+	line-height: 120px;
+
+}
+
+.horiz-top {
+
+	display: block; 
+	width: 100%; 
+	height: 120px;
+	border-bottom: 1px solid #ffffff;
+
+}
+
+.horiz-top a:hover {
+
+	border-bottom: 1px solid #ffffff;
+	height: 120px;
+
+}
+
+.horiz-bottom {
+
+	display: block; 
+	width: 100%; 
+	height: 60px;
+    font-size: 16px;
+	line-height: 60px;
+
+}
+
+.horiz-bottoms {
+
+	display: block; 
+	width: 49.8%; 
+	background-color: rgba(0, 0, 0, 0.3);
+	border-left: 1px solid #ffffff;
+}
+
+.line {
+
+	border-left: 0px solid #ffffff;
+}
+
+
+/* Scrollbar */
+
+.scrollbar {
+
+	margin: 5px 0 5px 0;
+
+	height: 10px;
+
+	background: #ccc;
+
+	line-height: 0;
+
+}
+
+.scrollbar .handle {
+
+	width: 100px;
+
+	height: 100%;
+
+	background: #292a33;
+
+	cursor: pointer;
+
+}
+
+.scrollbar .handle .mousearea {
+
+	position: absolute;
+
+	top: -9px;
+
+	left: 0;
+
+	width: 100%;
+
+	height: 20px;
+
+}
+
+
+
+/* Pages */
+
+.pages {
+
+	list-style: none;
+
+	margin: 20px 0;
+
+	padding: 0;
+
+	text-align: center;
+
+}
+
+.pages li {
+
+	display: inline-block;
+
+	width: 14px;
+
+	height: 14px;
+
+	margin: 0 4px;
+
+	text-indent: -999px;
+
+	border-radius: 10px;
+
+	cursor: pointer;
+
+	overflow: hidden;
+
+	background: #fff;
+
+	box-shadow: inset 0 0 0 1px rgba(0,0,0,.2);
+
+}
+
+.pages li:hover {
+
+	background: #aaa;
+
+}
+
+.pages li.active {
+
+	background: #666;
+
+}
+
+
+
+/* Controls */
+
+.controls { margin: 25px 0; text-align: center; }
+
+
+
+/* One Item Per Frame example*/
+
+.oneperframe { height: 300px; line-height: 300px; }
+
+.oneperframe ul li { width: 1140px; }
+
+.oneperframe ul li.active { background: #333; }
+
+
+
+/* Crazy example */
+
+.crazy ul li:nth-child(2n) { width: 100px; margin: 0 4px 0 20px; }
+
+.crazy ul li:nth-child(3n) { width: 300px; margin: 0 10px 0 5px; }
+
+.crazy ul li:nth-child(4n) { width: 400px; margin: 0 30px 0 2px; }
+
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+
+}
+
+
+
+/* Desktop Layout: 769px to a max of 1599px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) and (max-width: 1599px) {
+
+
+.horiz-bottoms {
+
+	width: 49.8%; 
+
+}
+
+.frame ul li {
+
+	width: 100%;
+
+}
+
+}
+
+
+/* Desktop Layout: from 1600px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 1600px) {
+
+
+.horiz-bottoms {
+
+	width: 49.8%; 
+
+}
+
+.frame ul li {
+
+	width: 100%;
+
+}
+
+}

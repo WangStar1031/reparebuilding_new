@@ -1,0 +1,250 @@
+@charset "utf-8";
+
+
+
+/* Mobile Layout: 480px and below. */
+
+
+
+#navMenu {
+
+	margin: 0;
+
+	padding: 0;
+
+	width: 100%;
+
+        border-top: 1px solid #fff;
+
+        font-size: 0.9em;	
+    margin-bottom: 5px;
+}
+
+#navMenu ul{
+
+	margin: 0;
+
+	padding: 0;	
+
+	line-height: 1em;
+
+	display: block;
+
+	width: 100%;
+
+}
+
+.home-li{
+
+	width: 100%;
+
+}
+
+.project-li-return-home{
+
+	width: 15%;	
+
+}
+
+.project-li-home{
+
+	width: 35%;	
+
+}
+
+.project-li-return-project{
+
+	width: 10%;	
+
+}
+
+.project-li-date-project{
+
+	width: 30%;	
+
+}
+
+.project-li-section-project{
+
+	width: 100%;	
+
+}
+
+.project-li-project-0{
+
+	width: 80%;	
+
+}
+
+.project-li-project{
+
+	width: 40%;	
+
+}
+
+#navMenu li{
+
+	margin: 0;
+
+	padding: 0;
+
+	display: block;	
+
+	list-style: none;
+
+	float: left;
+
+	position: relative;	
+
+	height: 50px; 
+
+	line-height: 50px;
+
+	color: #fff;
+
+	font-weight: 300;
+
+}
+
+#navMenu ul li a {
+
+        font-size: 1.1em;
+
+	text-align: center;
+
+	text-decoration: none;
+
+	display: block;
+
+	height: 50px; 
+
+	line-height: 45px;
+
+	color: rgba(255, 255, 255, 0.8);	
+
+	border-top: 1px solid white;
+
+	border-bottom: 1px solid white;
+
+	border-right: 1px solid white; 
+
+	border-left: 1px solid white;
+
+	font-weight: 300;
+
+}
+
+
+#navMenu ul li ul li {
+
+	border-top: 1px solid white;
+
+	width: 100%
+
+}
+
+#navMenu ul li ul li a{
+
+	border-top: 1px solid white;
+
+	padding-top: 4px;
+
+	font-size: 0.7em;
+
+}
+
+#navMenu ul ul{
+
+	position: absolute;
+
+	visibility: hidden;
+
+	top: 35px;
+
+	z-index: 1999;
+
+}
+
+#navMenu ul li:hover ul{
+
+	visibility: visible;
+
+}
+
+#navMenu li a:hover {
+
+	 color: rgba(255, 255, 255, 0.8);
+
+}
+
+#navMenu ul li:hover ul li a:hover{
+
+	 color: #59E6DC;
+
+}
+
+#navMenu a:hover {
+
+	color: #333;
+
+}
+
+
+
+/* Tablet Layout: 481px to 1068px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) and (max-width: 1068px) {
+
+
+#navMenu ul li a{
+	
+	font-size: 1.1em;
+
+}	
+	
+
+}
+
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+
+
+@media only screen and (min-width: 1069px) {
+
+
+#navMenu {
+
+        font-size: 1em;	
+
+}	
+
+
+
+#navMenu ul li a{
+
+	font-size: 1.3em;
+
+}.project-li-section-project{	width: 100%;	}.project-li-project{	width: 55%;	}
+
+.project-li-date-project{
+
+	width: 20%;	
+
+}
+
+
+
+#navMenu ul li ul li a{
+
+	border-top: 1px solid white;
+
+	font-size: 1.3em;
+
+}
+
+
+
+
+
+}
